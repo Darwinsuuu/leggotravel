@@ -125,6 +125,10 @@ h5 {
     color: var(--dark-blue) !important;
 }
 
+.bg-dark-blue {
+    background-color: var(--dark-blue) !important;
+}
+
 .raleway {
     font-family: 'Raleway', sans-serif !important;
 }

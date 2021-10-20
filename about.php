@@ -11,8 +11,8 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/674b5b9445.js" crossorigin="anonymous"></script>
 
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="style/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+   <!-- bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
 
     <!-- styling -->
@@ -108,7 +108,9 @@
     </div>
 
 
-    <p class="poppins fs-m text-center mt-5 p-5 bg-success text-white">
+    <br><br>
+
+    <p class="poppins fs-m text-center mt-5 p-5 bg-dark-blue text-white">
         
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, sunt. Optio dolores quasi consequuntur veritatis iure alias corrupti beatae tempore velit eveniet fugiat iste sint repellendus cum facere illo perspiciatis sunt excepturi, blanditiis, porro mollitia deserunt! Obcaecati at necessitatibus ex et voluptatem velit. Quam sint nobis expedita laudantium excepturi fugit amet necessitatibus minima ducimus omnis, ab architecto eum accusamus corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
 

@@ -49,6 +49,9 @@
                 <a href="contact.php">contact us</a>
             </li>
 
+            <li>
+                <a href="about.php">about</a>
+            </li>
 
             <?php
                 session_start();
@@ -92,6 +95,9 @@
                 <a href="contact.php">contact us</a>
             </li>
 
+            <li>
+                <a href="about.php">about</a>
+            </li>
             
             <?php
                 if(!isset($_SESSION["id"])) {

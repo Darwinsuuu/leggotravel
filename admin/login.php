@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>Login • LeggoTravel</title>
-
+    <title>Admin Login • LeggoTravel</title>
+    <link rel="icon" href="style/resources/logo_orange_black.png">
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/674b5b9445.js" crossorigin="anonymous"></script>

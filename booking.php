@@ -59,7 +59,7 @@
             </li>
 
             <li>
-                <a href="adventures.php">adventures</a>
+                <a class="active" href="adventures.php">adventures</a>
             </li>
 
             <li>
@@ -70,6 +70,9 @@
                 <a href="contact.php">contact us</a>
             </li>
 
+            <li>
+                <a href="about.php">about</a>
+            </li>
 
             <li>
                 <a href="db/db_logout_user.php">Logout</a>

@@ -38,7 +38,7 @@
             </li>
 
             <li>
-                <a href="adventures.php">adventures</a>
+                <a class="active" href="adventures.php">adventures</a>
             </li>
 
             <li>
@@ -47,6 +47,10 @@
 
             <li>
                 <a href="contact.php">contact us</a>
+            </li>
+
+            <li>
+                <a href="about.php">about</a>
             </li>
 
             <?php

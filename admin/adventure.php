@@ -1,3 +1,13 @@
+<?php
+    
+    session_start();
+    if(!isset($_SESSION["admin_id"])) {
+        header("Location: login.php?login=failed");
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +19,7 @@
 
 
     <title>Adventures • LeggoTravel</title>
-
+    <link rel="icon" href="../style/resources/logo_orange_black.png">
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/674b5b9445.js" crossorigin="anonymous"></script>
@@ -76,7 +86,7 @@
             
             <div class="flex-container-title">
                 <h1>Manage Adventure</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe dignissimos beatae corporis neque pariatur vitae officia cumque cum quibusdam ullam magni explicabo nesciunt quasi ex dolor distinctio obcaecati dicta consectetur, iste architecto aliquam?</p>
+                <p>It manages the places chosen and booked by the customers. It can generate information that determines the top six latest adventures together with its information that are posted to the customer's feed/interface.</p>
             </div>
 
 

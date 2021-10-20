@@ -1,3 +1,12 @@
+<?php
+    
+    session_start();
+    if(!isset($_SESSION["admin_id"])) {
+        header("Location: login.php?login=failed");
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,7 +85,7 @@
             
             <div class="flex-container-title">
                 <h1>Manage Bookings</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe dignissimos beatae corporis neque pariatur vitae officia cumque cum quibusdam ullam magni explicabo nesciunt quasi ex dolor distinctio obcaecati dicta consectetur, iste architecto aliquam? Perferendis ducimus corporis, animi iste perspiciatis, repudiandae laudantium sapiente necessitatibus officia eveniet nam debitis quasi. Odio sit reiciendis numquam fuga accusamus voluptates.</p>
+                <p>It manages customers' travel bookings, including their name, destination, number of people, price per head, and the total price with promo applied. It enables the administrator to retrieve and check book reservations.</p>
             </div>
             
             <hr class="mt-4">

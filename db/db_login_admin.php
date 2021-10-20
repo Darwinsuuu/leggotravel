@@ -13,10 +13,9 @@
 
         while($row = mysqli_fetch_assoc($result)) {
 
-            
-            // session_start();
-            // $_SESSION['id'] = $row["user_id"];
-            header("Location: ../admin/index.html");
+            session_start();
+            $_SESSION['admin_id'] = $row["admin_id"];
+            header("Location: ../admin/index.php");
             exit();
 
         }
@@ -26,4 +25,5 @@
     }
 
     mysqli_close($connect);
+    
 ?>

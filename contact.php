@@ -50,6 +50,10 @@
                 <a href="#" class="active">contact us</a>
             </li>
 
+            <li>
+                <a href="about.php">about</a>
+            </li>
+
             <?php
                 session_start();
                 if(!isset($_SESSION["id"])) {

@@ -57,11 +57,15 @@
             </li>
 
             <li>
-                <a href="#">blogs</a>
+                <a class="active" href="blogs.php">blogs</a>
             </li>
 
             <li>
                 <a href="contact.php">contact us</a>
+            </li>
+
+            <li>
+                <a href="about.php">about</a>
             </li>
 
             <li>

@@ -1,3 +1,13 @@
+<?php
+    
+    session_start();
+    if(!isset($_SESSION["admin_id"])) {
+        header("Location: login.php?login=failed");
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +18,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>Home • LeggoTravel</title>
-
+    <title>Edit Adventure • LeggoTravel</title>
+    <link rel="icon" href="style/resources/logo_orange_black.png">
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/674b5b9445.js" crossorigin="anonymous"></script>
 
-   
     <!-- bootstrap -->
     <link rel="stylesheet" href="../style/bootstrap-5.0.2-dist/css/bootstrap.min.css">
 

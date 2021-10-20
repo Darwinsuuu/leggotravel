@@ -49,6 +49,10 @@
                 <a href="contact.php">contact us</a>
             </li>
 
+            <li>
+                <a class="active" href="about.php">about</a>
+            </li>
+
             <?php
                 session_start();
                 if(!isset($_SESSION["id"])) {

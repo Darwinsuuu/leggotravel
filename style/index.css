@@ -823,3 +823,42 @@ footer p {
     background: rgba(0, 0, 0, 0.6);
     position: fixed;
 }
+
+
+.card-about {
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 480px;
+    padding: 25px 30px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+
+.card-about:hover {
+    margin-top: -5px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+}
+
+.card-about i {
+    font-size: 89px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.card-about p {
+    color: #fff;
+}
+
+.bg-about1 {
+    background-color: #355ad4;
+}
+
+.bg-about2 {
+    background-color: #0f818a;
+}
+
+.bg-about3 {
+    background-color: #619562;
+}

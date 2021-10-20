@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap');
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Scheherazade New', serif; */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    /* fonts */
+    --poppins: 'Poppins', sans-serif;
+    --raleway: 'Raleway', sans-serif;
+    --scheherazade: 'Scheherazade New', serif;
+
+    /* colors */
+    --orange: #ff9c07;
+    --dark-orange: #c38220;
+    --brown: #7F5F35;
+    --semi-white: #FFECCC;
+    --dark-blue: #005B4A;
+    --dark-blue2: #0b4238;
+
+}
+
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* reuseables */
+.fs-sm {
+    font-size: 14px !important;
+}
+
+.fs-m {
+    font-size: 18px !important;
+}
+
+.fs-lg {
+    font-size: 22px !important;
+}
+
+.fs-xl {
+    font-size: 28px !important;
+}
+
+.orange {
+    color: var(--orange) !important;
+}
+
+.brown {
+    color: var(--brown) !important;
+}
+
+.semi-white {
+    color: var(--semi-white) !important;
+}
+
+.dark-blue {
+    color: var(--dark-blue) !important;
+}
+
+.raleway {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.scheherazade {
+    font-family: 'Scheherazade New', serif !important;
+}
+
+
+
+
+/* forms */
+.btn {
+    font-family: var(--poppins);
+}
+
+.form-control {
+    font-family: var(--poppins);
+}
+
+.form-label {
+    font-family: var(--poppins);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.select2-container--bootstrap-5 .select2-selection {
+    font-family: var(--poppins) !important;
+}
+
+textarea {
+    resize: none;
+}
+
+.custom-alert {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 57.5%;
+    transform: translateX(-50%);
+    width: 500px;
+    z-index: 99;
+}
+
+.custom-alert a {
+    position: absolute;
+    font-size: 22px;
+    font-weight: 700;
+    top: .6rem;
+    right: 20px;
+    color: #858585;
+}

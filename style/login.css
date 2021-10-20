@@ -1,0 +1,23 @@
+@import url(global.css);
+
+body {
+    background-image:  linear-gradient(-60deg, rgba(69, 70, 71, 0.287), rgba(0, 1, 2, 0.85)), url(resources/bg_2.jfif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.login-wrapper {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 12px;
+    border: none;
+    padding: 50px 40px;
+}

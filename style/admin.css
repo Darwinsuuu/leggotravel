@@ -1,0 +1,271 @@
+@import url(global.css);
+
+.custom-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.navigation {
+    display: block;
+    position: fixed;
+    width: 15%;
+    height: 100vh;
+    background-color: var(--dark-blue);
+    z-index: 99;
+}
+
+.navigation p {
+    text-align: center;
+    font-family: var(--scheherazade);
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+    padding: 20px 0;
+    color: var(--orange);
+}
+
+
+.navigation ul li a {
+    display: block;
+    width: 100%;
+    padding: 25px 25px;
+    font-size: 18px;
+    color: #fff;
+    font-family: var(--raleway);
+    font-weight: 500;
+}
+
+
+.navigation ul li a:hover,
+a.active {
+    transition: .3s border-left;
+    background-color: var(--dark-blue2);
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
+    border-left: 7px solid var(--orange);
+}
+
+
+.flex-container {
+    display: block;
+    position: sticky;
+    width: 85%;
+    height: 100vh;
+    left: 15%;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.flex-container h1 {
+    font-family: var(--poppins);
+    font-weight: 700;
+}
+
+
+.flex-container p {
+    font-family: var(--poppins);
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.adventures-table-wrapper {
+    margin-top: 40px;
+}
+
+.adventures-table-wrapper table.setTable {
+    display: block;
+    border-collapse: collapse;
+    font-family: var(--poppins);
+    width: 100%;
+    height: 630px !important;
+    overflow: auto;
+}
+
+.adventures-table-wrapper table.setTable thead th { 
+    position: sticky; 
+    top: 0; 
+    z-index: 1; 
+}
+
+
+.adventures-table-wrapper table.setTable thead th:nth-child(1) {
+    width: 10% !important;
+}
+
+.adventures-table-wrapper table.setTable thead th:nth-child(2) {
+    width: 10% !important;
+}
+
+.adventures-table-wrapper table.setTable thead th:nth-child(3) {
+    width: 10% !important;
+}
+
+.adventures-table-wrapper table.setTable thead th:nth-child(4) {
+    width: 5% !important;
+}
+
+.adventures-table-wrapper table.setTable thead th:nth-child(8) {
+    width: 25% !important;
+}
+
+.table-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.search-wrapper {
+    display: block;
+    position: relative;
+    right: 0;
+}
+
+.input-group {
+    display: flex;
+    position: absolute;
+    width: 450px;
+    right: 0 !important;
+    top: -30px;
+}
+
+.input-group input {
+    padding-right: 45px;
+    padding-left: 25px;
+}
+
+.input-group i {
+    position: absolute;
+    top: .9rem;
+    font-size: 20px;
+    right: 1rem;
+    color: #bcbcbc;
+    z-index: 99;
+}
+
+/* modal adventure */
+.modal-insert-adventure {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 99;
+}
+
+
+.modal-adventure-content-form {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1100px;
+    background-color: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .6);
+    border-radius: 7px;
+    padding: 25px 35px;
+    animation-name: animateModalAdventure;
+    animation-duration: .5s;
+}
+
+
+@keyframes animateModalAdventure {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 1100px;
+    }
+}
+
+.modal-title-header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    animation-name: animateModals;
+    animation-duration: .6s;
+}
+
+.custom-modal-body {
+    position: relative;
+    width: 100%;
+    animation-name: animateModals;
+    animation-duration: .6s;
+}
+
+@keyframes animateModals {
+    0% {
+        width: 0%;
+        /* opacity: 0; */
+    }
+    100% {
+        /* opacity: 1; */
+        width: 100%;
+    }
+}
+
+
+.modal-title-header i {
+    margin-right: 10px;
+    font-size: 35px;
+}
+
+
+@keyframes animateTitleModal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.modal-title-header h3 {
+    font-size: 28px;
+    margin-top: 5px;
+    font-family: var(--poppins);
+    text-transform: capitalize;
+    font-weight: 600;
+    animation-name: animateTitleModal;
+    animation-duration: 2s;
+}
+
+.btn-modal-close {
+    font-size: 28px;
+    color: #bcbcbc;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.btn-modal-close:hover {
+    transition: .3s color;
+    color: #000;
+}
+
+.flex-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-wrapper {
+    width: 55%; margin-top: 55px;
+}
+
+.img-preview img {
+    width: 100%;
+}
+
+.divier-form-modal {
+    width: 3px;
+    background-color: rgba(83, 83, 83, 0.3);
+    margin: 0 25px;
+}

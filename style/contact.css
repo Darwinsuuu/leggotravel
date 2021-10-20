@@ -1,0 +1,20 @@
+@import url(global.css);
+
+body {
+    background-image: url(resources/bg_3.jfif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.wrapper-contact {
+    display: block;
+    position: absolute;
+    width: 600px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 6px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 30px;
+}

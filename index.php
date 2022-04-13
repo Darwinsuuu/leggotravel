@@ -152,6 +152,8 @@
                 if(mysqli_num_rows($result) > 0) {
 
                     while($row = mysqli_fetch_assoc($result)) {
+
+                        $total = $row["price"] - ($row["price"] * ($row["promo"]/100));
                         
                         if($row["promo"] > 0) {
                             echo "<div class='card-package-promo'>".
@@ -168,7 +170,7 @@
 
                                     "<div class='card-promo-holder-price my-2'>".
                                         "<div class='d-flex'>".
-                                            "<p class='dark-blue poppins fs-m fw-bold'>₱".$row["price"] - ($row["price"] * ($row["promo"]/100))."</p><p class='fs-m poppins text-muted'>/head</p>".
+                                            "<p class='dark-blue poppins fs-m fw-bold'>₱".$total."</p><p class='fs-m poppins text-muted'>/head</p>".
                                             "<p class='mx-2 poppins fs-m text-danger old-price'>(₱".$row["price"].")</p>".
                                             "<p class='mx-2 poppins fs-m text-muted'>".$row["promo"]."% Off</p>".
                                         "</div>".

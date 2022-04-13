@@ -171,11 +171,13 @@
                         
                         <?php
 
+                        $total = $price - ($price * ($promo/100));
+
                             if($promo > 0) {
                                 echo "<div class='d-flex'>".
                                         "<div class='d-flex flex-column w-50'>".
                                             "<h5 class='poppins text-muted'>New price</h5>".
-                                            "<p class='poppins mt-1 fs-m dark-blue fw-bold'>₱".$price - ($price * ($promo/100))."</p>".
+                                            "<p class='poppins mt-1 fs-m dark-blue fw-bold'>₱".$total."</p>".
                                         "</div>".
                     
                                         "<div class='d-flex flex-column mx-2 w-50'>".
